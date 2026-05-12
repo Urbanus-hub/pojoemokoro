@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #7C3AED;
+  --color-primary-dark: #6D28D9;
+  --color-primary-light: #EDE9FE;
+  --color-primary-50: #F5F3FF;
+
+  --color-white: #FFFFFF;
+  --color-off-white: #F9FAFB;
+  --color-gray-50: #F3F4F6;
+  --color-gray-100: #E5E7EB;
+  --color-gray-200: #D1D5DB;
+  --color-gray-300: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+  --color-gray-900: #111827;
+
+  --color-whatsapp: #25D366;
+
+  --font-heading: 'Sora', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-gray-800);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-gray-900);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-5 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-lg mt-3 max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-7 py-3.5 bg-primary text-white font-semibold rounded-lg
+           transition-all duration-200 hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary/50
+           text-sm tracking-wide;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-7 py-3.5 border-2 border-white text-white font-semibold rounded-lg
+           transition-all duration-200 hover:bg-white hover:text-gray-900
+           text-sm tracking-wide;
+  }
+}
