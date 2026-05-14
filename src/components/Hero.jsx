@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
-import { IMAGES } from '../data/images';
+
+import kitchen from '../assets/kitchen.png';
 
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 28 },
@@ -63,9 +64,8 @@ export default function Hero() {
               animate="visible"
               className="text-4xl sm:text-5xl lg:text-[3.25rem] font-black text-gray-900 leading-[1.1] tracking-tight font-heading"
             >
-              We Make Your{' '}
-              <span className="text-primary">Spaces</span>
-              {' '}Feel Complete
+              Beautiful Tiles, <br />
+              <span className="text-primary">Perfectly Laid</span>
             </motion.h1>
 
             {/* Subtext */}
@@ -73,11 +73,9 @@ export default function Hero() {
               variants={fadeUp(0.2)}
               initial="hidden"
               animate="visible"
-              className="mt-5 text-base sm:text-lg text-gray-500 leading-relaxed max-w-lg"
+              className="mt-5 text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg font-medium"
             >
-              Professional tile installation and repair done with care,
-              precision, and attention to detail. We come to you, wherever
-              you are.
+              We do neat, fast, and reliable tile work for your home or business. No mess, no stress—just a clean finish you will love.
             </motion.p>
 
             {/* CTAs */}
@@ -130,7 +128,7 @@ export default function Hero() {
             {/* Main image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={IMAGES.hero}
+                src={kitchen}
                 alt="Professional tile installation work"
                 className="w-full h-[340px] sm:h-[420px] lg:h-[500px] object-cover"
               />

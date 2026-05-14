@@ -27,23 +27,23 @@ export const PORTFOLIO_ITEMS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Sarah K.',
+    name: 'Njeri K.',
     role: 'Homeowner',
-    avatar: 'https://i.pravatar.cc/80?u=sarah-k-tile',
+    avatar: 'https://images.pexels.com/photos/3762804/pexels-photo-3762804.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop',
     text: "They did a clean job and finished on time. I'm really happy with how the bathroom looks — will definitely call them again.",
   },
   {
     id: 2,
-    name: 'James M.',
+    name: 'Kevin O.',
     role: 'Property Owner',
-    avatar: 'https://i.pravatar.cc/80?u=james-m-tile',
+    avatar: 'https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&q=80&w=80&h=80',
     text: 'Very professional team. They treated my home with care and left everything spotless. The tiles look absolutely perfect.',
   },
   {
     id: 3,
-    name: 'Grace N.',
+    name: 'Wanjiku N.',
     role: 'Homeowner',
-    avatar: 'https://i.pravatar.cc/80?u=grace-n-tile',
+    avatar: 'https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?auto=format&fit=crop&q=80&w=80&h=80',
     text: 'Honest pricing and great work. They listened to exactly what I wanted and delivered just that. Really happy.',
   },
 ];

@@ -1,5 +1,5 @@
 import { CheckCircle } from 'lucide-react';
-import { IMAGES } from '../data/images';
+
 import AnimatedSection from './AnimatedSection';
 
 import atwork from '../assets/atwork.png';
