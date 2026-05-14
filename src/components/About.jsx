@@ -2,6 +2,8 @@ import { CheckCircle } from 'lucide-react';
 import { IMAGES } from '../data/images';
 import AnimatedSection from './AnimatedSection';
 
+import atwork from '../assets/atwork.png';
+
 const HIGHLIGHTS = [
   'Experienced, skilled tiling team',
   'We travel to wherever you need us',
@@ -19,7 +21,7 @@ export default function About() {
           <AnimatedSection>
             <div className="relative rounded-2xl overflow-hidden shadow-sm">
               <img
-                src={IMAGES.about}
+                src={atwork}
                 alt="Tile installation work in progress"
                 className="w-full h-80 lg:h-[440px] object-cover"
               />

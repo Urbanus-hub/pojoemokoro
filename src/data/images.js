@@ -1,6 +1,6 @@
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/24357101/pexels-photo-24357101.jpeg?auto=compress&cs=tinysrgb&w=1920',
-  about: 'https://images.pexels.com/photos/29181494/pexels-photo-29181494.jpeg?auto=compress&cs=tinysrgb&w=800',
+  about: '',
   portfolio: {
     bathroom1: 'https://images.pexels.com/photos/6032429/pexels-photo-6032429.jpeg?auto=compress&cs=tinysrgb&w=800',
     bathroom2: 'https://images.pexels.com/photos/7147294/pexels-photo-7147294.jpeg?auto=compress&cs=tinysrgb&w=800',
