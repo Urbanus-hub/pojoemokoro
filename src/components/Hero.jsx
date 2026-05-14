@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { motion } from "framer-motion";
+import { CheckCircle, ArrowRight } from "lucide-react";
 
-import kitchen from '../assets/kitchen.png';
+import kitchen from "../assets/kitchen.png";
 
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 28 },
@@ -13,35 +13,31 @@ const fadeUp = (delay = 0) => ({
 });
 
 const TRUST_ITEMS = [
-  'Clean, precise work',
-  'Always on time',
-  'Trusted by homeowners',
+  "Clean, precise work",
+  "Always on time",
+  "Trusted by homeowners",
 ];
 
 export default function Hero() {
   const scrollTo = (e, id) => {
     e.preventDefault();
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section
-      id="home"
-      className="relative bg-white overflow-hidden"
-    >
+    <section id="home" className="relative bg-white overflow-hidden">
       {/* Subtle background accent */}
       <div
         className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none -z-0"
         style={{
           background:
-            'radial-gradient(circle, rgba(254,0,178,0.06) 0%, transparent 70%)',
-          transform: 'translate(30%, -30%)',
+            "radial-gradient(circle, rgba(254,0,178,0.06) 0%, transparent 70%)",
+          transform: "translate(30%, -30%)",
         }}
       />
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-16 pt-28 md:pt-32 pb-16 md:pb-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
           {/* ── LEFT: Text ─────────────────────────────────── */}
           <div>
             {/* Company badge */}
@@ -75,7 +71,8 @@ export default function Hero() {
               animate="visible"
               className="mt-5 text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg font-medium"
             >
-              We do neat, fast, and reliable tile work for your home or business. No mess, no stress—just a clean finish you will love.
+              We do neat, fast, and reliable tile work for your home or
+              business. No mess, no stress—just a clean finish you will love.
             </motion.p>
 
             {/* CTAs */}
@@ -87,7 +84,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                onClick={(e) => scrollTo(e, '#contact')}
+                onClick={(e) => scrollTo(e, "#contact")}
                 className="btn-primary !py-4 !px-8 !text-base gap-2"
               >
                 Get a Quote
@@ -95,7 +92,7 @@ export default function Hero() {
               </a>
               <a
                 href="#projects"
-                onClick={(e) => scrollTo(e, '#projects')}
+                onClick={(e) => scrollTo(e, "#projects")}
                 className="btn-outline !py-4 !px-8 !text-base"
               >
                 View Our Work
@@ -110,7 +107,10 @@ export default function Hero() {
               className="mt-7 flex flex-wrap gap-x-5 gap-y-2"
             >
               {TRUST_ITEMS.map((item) => (
-                <span key={item} className="flex items-center gap-1.5 text-sm text-gray-600 font-medium">
+                <span
+                  key={item}
+                  className="flex items-center gap-1.5 text-sm text-gray-600 font-medium"
+                >
                   <CheckCircle size={14} className="text-primary shrink-0" />
                   {item}
                 </span>
@@ -140,11 +140,17 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, x: -16 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.55,
+                ease: [0.25, 0.1, 0.25, 1],
+              }}
               className="absolute -bottom-5 left-4 lg:-bottom-8 lg:-left-8 bg-white rounded-xl shadow-xl border border-gray-100 p-4 md:p-5 flex items-center gap-4 z-20"
             >
               <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                <span className="text-primary font-black text-lg md:text-2xl leading-none">5+</span>
+                <span className="text-primary font-black text-lg md:text-2xl leading-none">
+                  5+
+                </span>
               </div>
               <div>
                 <p className="text-gray-900 font-bold text-sm md:text-base leading-tight">
@@ -159,10 +165,9 @@ export default function Hero() {
             {/* Pink decorative blur */}
             <div
               className="absolute -top-8 -right-6 w-36 h-36 rounded-full blur-3xl -z-10 pointer-events-none"
-              style={{ background: 'rgba(254,0,178,0.12)' }}
+              style={{ background: "rgba(254,0,178,0.12)" }}
             />
           </motion.div>
-
         </div>
       </div>
 
@@ -171,9 +176,9 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
             {[
-              { stat: 'Wall & Floor Tiling', note: 'Any surface, any room' },
-              { stat: 'Granite & Marble', note: 'Precision stone fixing' },
-              { stat: 'Grouting & Repair', note: 'We fix it right' },
+              { stat: "Wall & Floor Tiling", note: "Any surface, any room" },
+              { stat: "Granite & Marble", note: "Precision stone fixing" },
+              { stat: "Grouting & Repair", note: "We fix it right" },
             ].map(({ stat, note }, i) => (
               <motion.div
                 key={stat}
@@ -182,7 +187,9 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
                 className="flex flex-col items-center justify-center py-4 sm:py-5 text-center px-4"
               >
-                <span className="text-sm font-bold text-gray-800 font-heading">{stat}</span>
+                <span className="text-sm font-bold text-gray-800 font-heading">
+                  {stat}
+                </span>
                 <span className="text-xs text-gray-400 mt-0.5">{note}</span>
               </motion.div>
             ))}
