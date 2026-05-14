@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #7C3AED;
-  --color-primary-dark: #6D28D9;
-  --color-primary-light: #EDE9FE;
-  --color-primary-50: #F5F3FF;
+  --color-primary: #FE00B2;
+  --color-primary-dark: #D4009A;
+  --color-primary-light: #FFE0F5;
+  --color-primary-50: #FFF5FC;
 
   --color-white: #FFFFFF;
   --color-off-white: #F9FAFB;
@@ -14,6 +14,7 @@
   --color-gray-200: #D1D5DB;
   --color-gray-300: #9CA3AF;
   --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
   --color-gray-700: #374151;
   --color-gray-800: #1F2937;
   --color-gray-900: #111827;
@@ -58,23 +59,35 @@
     @apply max-w-7xl mx-auto;
   }
 
+  .section-tag {
+    @apply text-primary font-semibold text-xs uppercase tracking-widest mb-2 inline-block;
+  }
+
   .section-title {
     @apply text-3xl md:text-4xl font-bold tracking-tight;
   }
 
   .section-subtitle {
-    @apply text-gray-500 text-lg mt-3 max-w-2xl;
+    @apply text-gray-500 text-lg mt-3 max-w-2xl leading-relaxed;
   }
 
   .btn-primary {
     @apply inline-flex items-center justify-center px-7 py-3.5 bg-primary text-white font-semibold rounded-lg
-           transition-all duration-200 hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary/50
+           transition-all duration-200 hover:bg-primary-dark active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-primary/40
+           text-sm tracking-wide shadow-sm hover:shadow-md;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-7 py-3.5 border-2 border-gray-200 text-gray-700 font-semibold rounded-lg
+           transition-all duration-200 hover:border-primary hover:text-primary active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-primary/20
            text-sm tracking-wide;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-7 py-3.5 border-2 border-white text-white font-semibold rounded-lg
-           transition-all duration-200 hover:bg-white hover:text-gray-900
+    @apply inline-flex items-center justify-center px-7 py-3.5 border-2 border-white/30 text-white font-semibold rounded-lg
+           transition-all duration-200 hover:bg-white/10 hover:border-white/60 active:scale-95
            text-sm tracking-wide;
   }
 }

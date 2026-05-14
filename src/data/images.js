@@ -1,7 +1,6 @@
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/24357101/pexels-photo-24357101.jpeg?auto=compress&cs=tinysrgb&w=1920',
   about: 'https://images.pexels.com/photos/29181494/pexels-photo-29181494.jpeg?auto=compress&cs=tinysrgb&w=800',
-  cta: 'https://images.pexels.com/photos/11806482/pexels-photo-11806482.jpeg?auto=compress&cs=tinysrgb&w=1920',
   portfolio: {
     bathroom1: 'https://images.pexels.com/photos/6032429/pexels-photo-6032429.jpeg?auto=compress&cs=tinysrgb&w=800',
     bathroom2: 'https://images.pexels.com/photos/7147294/pexels-photo-7147294.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -28,23 +27,23 @@ export const PORTFOLIO_ITEMS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Sarah Wanjiku',
-    role: 'Homeowner, Lavington',
-    avatar: 'https://i.pravatar.cc/80?u=sarah-wanjiku',
-    text: 'They did our bathroom tiles in two days. Clean work, no mess, and the finish is perfect. Would definitely hire again.',
+    name: 'Sarah K.',
+    role: 'Homeowner',
+    avatar: 'https://i.pravatar.cc/80?u=sarah-k-tile',
+    text: "They did a clean job and finished on time. I'm really happy with how the bathroom looks — will definitely call them again.",
   },
   {
     id: 2,
-    name: 'James Omondi',
-    role: 'Property Developer',
-    avatar: 'https://i.pravatar.cc/80?u=james-omondi',
-    text: 'Professional and reliable. We\'ve used Lilian Tile Solutions for three projects now. They always deliver quality work on time.',
+    name: 'James M.',
+    role: 'Property Owner',
+    avatar: 'https://i.pravatar.cc/80?u=james-m-tile',
+    text: 'Very professional team. They treated my home with care and left everything spotless. The tiles look absolutely perfect.',
   },
   {
     id: 3,
-    name: 'Grace Muthoni',
-    role: 'Homeowner, Westlands',
-    avatar: 'https://i.pravatar.cc/80?u=grace-muthoni',
-    text: 'Fair pricing and great communication throughout. Our kitchen floor tiles look amazing. Highly recommend their services.',
+    name: 'Grace N.',
+    role: 'Homeowner',
+    avatar: 'https://i.pravatar.cc/80?u=grace-n-tile',
+    text: 'Honest pricing and great work. They listened to exactly what I wanted and delivered just that. Really happy.',
   },
 ];
