@@ -157,7 +157,7 @@ export default function Hero() {
                   Years Experience
                 </p>
                 <p className="text-gray-500 font-medium text-xs md:text-sm mt-0.5">
-                  100+ Projects Completed
+                  20+ Projects Completed
                 </p>
               </div>
             </motion.div>
